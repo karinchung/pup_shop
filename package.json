@@ -1,0 +1,25 @@
+{
+  "name": "pup_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewnelson18/pup_shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewnelson18/pup_shop/issues"
+  },
+  "homepage": "https://github.com/matthewnelson18/pup_shop#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.7",
+    "morgan": "^1.8.1"
+  }
+}
