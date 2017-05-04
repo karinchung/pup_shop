@@ -1,7 +1,7 @@
 const
   express = require('express'),
   pupRouter = express.Router(),
-  pupsCtrl = require('../controller/pups.js')
+  pupsCtrl = require('../controllers/pups.js')
 
 pupRouter.route('/')
   .get(pupsCtrl.index)
