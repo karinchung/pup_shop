@@ -20,35 +20,15 @@ app.get('/', (req, res) => {
   res.json({message:'All of the puppies!'})
 })
 
-app.get('/puppies', (req, res) => {
-  Pup.find({}, (err, puppies) => {
-    res.json(puppies)
-  })
-})
+app.get('/puppies', )
 
-app.post('/puppies', (req, res) => {
-  Pup.create(req.body, (err, newPuppy) => {
-    res.json({success: true, pup: newPuppy})
-  })
-})
+app.post('/puppies', )
 
-app.get('/puppies/:id', (req, res) => {
-  Pup.findById(req.params.id, (err, singlePup) => {
-    res.json(singlePup)
-  })
-})
+app.get('/puppies/:id', )
 
-app.patch('/puppies/:id', (req, res) => {
-  Pup.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatePup) => {
-    res.json({success: true, pup: updatePup})
-  })
-})
+app.patch('/puppies/:id', )
 
-app.delete('/puppies/:id', (req, res) => {
-  Candy.findByIdAndRemove(req.params.id, (err, deletePup) => {
-    res.redirect('/puppies')
-  })
-})
+app.delete('/puppies/:id', )
 
 app.listen(3000, (err) =>{
   console.log(err || "Server runnin on port 3000!")
@@ -56,6 +36,6 @@ app.listen(3000, (err) =>{
 
 
 app.get('/pups', (req, res) => {
-  var allPups = exports.pupsShow()
+  var allPups = exports.pupsShow
   res.json(allPups)
 })
