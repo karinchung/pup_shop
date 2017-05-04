@@ -4,7 +4,7 @@ const
   bodyParser = require('body-parser')
   morgan = require('morgan')
   mongoose = require('mongoose')
-  Pup = require(./models/Pup.js)
+  Pup = require('Pup.js')
 
 mongoose.connect('mongodb://localhost/pupshop', (err) => {
     console.log(err || "connected to mongo!")
