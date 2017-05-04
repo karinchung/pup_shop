@@ -22,6 +22,6 @@ app.listen(3000, (err) => {
 
 
 app.get('/pups', (req, res) => {
-  var allPups = PupController.pupsShow()
-  console.log(allPups)
+  var allPups = exports.pupsShow()
+  res.json(allPups)
 })

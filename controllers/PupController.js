@@ -1,6 +1,6 @@
-var exports = module.exports = {};
+var exports = module.exports = {}
 
-exports.pupsShow = function(Pup){
+exports.pupsShow = function(){
   Pup.find({}, (err, pupsFromDb) => {
     return pupsFromDb
   })
